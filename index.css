@@ -1,0 +1,84 @@
+
+body{
+    background:linear-gradient(hsl(0, 0%, 0%),hsl(278, 98%, 18%));
+    background-attachment: fixed;
+}
+header{
+    text-align: center;
+    color:aquamarine;
+    margin-top:50px;
+}
+i.bi-music-note-beamed{
+    font-size:80px;
+}
+#drum-machine{
+    border:2px solid white;
+    border-radius: 20px;
+    background:linear-gradient(black,#36454F);
+    width:50%;
+    height:300px;
+    margin:auto;
+    margin-top:100px
+}
+#drum-pads{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    width:fit-content;
+    text-align: center;
+    position:relative;
+    right:200px;
+    bottom:80px;
+}
+.drum-pad{
+
+    width:80px;
+    height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(#2c3e50,black);
+    border-radius:20px;
+    color:bisque;
+    font-size:25px;
+    box-shadow: 5px 5px whitesmoke;
+}
+.drum-pad:active{
+    transform:translateX(5px)
+    rotate(10deg);
+    transition:transform .2s ease-in-out;
+}
+.drum-pad:hover{
+    background:linear-gradient(#2c3e507d,black);
+    cursor:pointer;
+}
+#display{
+    width:150px;
+    height:auto;
+    width:200px;
+    text-align:center;
+    font-size:1.5em;
+    color:white;
+    position:relative;
+    left:380px;
+    top:50px;
+
+}
+#mute{
+    position:relative;
+    left:450px;
+    top:80px;
+}
+i.bi-volume-up-fill,i.bi-volume-mute-fill{
+    font-size:30px;
+    
+}
+#slider{
+    width:220px;
+    position:relative;
+    left:320px;
+    top:180px;
+}
